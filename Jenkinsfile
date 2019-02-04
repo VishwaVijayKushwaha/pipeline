@@ -1,6 +1,4 @@
-def jobnameparts = JOB_NAME.tokenize('/') as String[]
-def repositoryname = jobnameparts[2]
-println "______________________"+repositoryname
+println "______________________"+JOB_NAME
 
 pipeline {
     agent any
