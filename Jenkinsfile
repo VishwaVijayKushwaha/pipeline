@@ -1,5 +1,8 @@
 println "______________________"+JOB_NAME
 node {
+    def files = findFiles(glob: '*.*')
+    for file in files
+        println '_____'+file
     println "______________________Reading yml file"
     def env = readYaml file: "sample.yml"
     println env.name
